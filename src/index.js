@@ -2,23 +2,22 @@ import * as tf from '@tensorflow/tfjs-node';
 import Jimp from 'jimp';
 import labels from '../assets/labels.json';
 
-export default class ResNetPrediction {
+export default class ResNetPredictor {
   constructor() {
     this.model;
     this.labels = labels;
+    this.modelPath = `file:///${__dirname}/../ResNet152/model.json`;
   }
 
-  async initialize() {
-    this.model = await tf.loadLayersModel(
-      `file:///${__dirname}/../ResNet50/model.json`
-    );
-  }
+  initialize = async () => {
+    this.model = await tf.loadLayersModel(this.modelPath);
+  };
 
-  static async create() {
-    const o = new ResNetPrediction();
+  static create = async () => {
+    const o = new ResNetPredictor();
     await o.initialize();
     return o;
-  }
+  };
 
   loadImg = async imgURI => {
     return Jimp.read(imgURI).then(img => {
@@ -34,9 +33,7 @@ export default class ResNetPrediction {
         p.push(this.bitmap.data[idx + 2]);
       });
 
-      return tf
-        .tensor3d(p, [img.bitmap.width, img.bitmap.height, 3])
-        .reshape([1, img.bitmap.width, img.bitmap.height, 3]);
+      return tf.tensor4d(p, [1, img.bitmap.width, img.bitmap.height, 3]);
     });
   };
 
