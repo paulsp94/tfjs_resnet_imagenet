@@ -29,6 +29,6 @@ const run = async () => {
 
 To try the model you can just load it using:    
 ```javascript
-XceptionURL = 'https://github.com/paulsp94/tfjs_Xception_imagenet/blob/master/model/model.json';
-const Xception = await tf.loadLayersModel(XceptionURL);
+ResNetURL = 'https://raw.githubusercontent.com/paulsp94/tfjs_resnet_imagenet/master/ResNet50/model.json';
+const ResNet = await tf.loadLayersModel(ResNetURL);
 ```
