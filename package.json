@@ -1,8 +1,8 @@
 {
   "name": "resnet_imagenet",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "prepare": "node_modules/@babel/cli/bin/babel.js src --out-dir lib"
   },
