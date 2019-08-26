@@ -6,7 +6,7 @@ export default class ResNetPredictor {
   constructor() {
     this.model;
     this.labels = labels;
-    this.modelPath = `file:///${__dirname}/../ResNet152/model.json`;
+    this.modelPath = `file:///${__dirname}/../ResNet50/model.json`;
   }
 
   initialize = async () => {
