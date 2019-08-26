@@ -1,12 +1,16 @@
 {
   "name": "resnet_imagenet",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "prepare": "node_modules/@babel/cli/bin/babel.js src --out-dir lib"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paulsp94/tfjs_resnet_imagenet"
+  },
+  "author": "Paul Spende <paul.spende@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "@tensorflow/tfjs": "^1.2.8",
