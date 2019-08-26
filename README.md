@@ -1,6 +1,7 @@
 # ResNet Model trained on ImageNet
 [![GSOC](https://img.shields.io/badge/GSOC-2019-yellow)](https://summerofcode.withgoogle.com/organizations/6137730124218368/?sp-page=2#4558376158101504)
 ![GitHub](https://img.shields.io/github/license/paulsp94/tfjs_resnet_imagenet)
+![npm (tag)](https://img.shields.io/npm/v/resnet_imagenet/latest)
 
 The ResNet50 model pretrained on imagenet for TensorFlow.js as a layers model.   
 On ImageNet, this model gets to a top-1 validation accuracy of 0.749 and a top-5 validation accuracy of 0.921.   
