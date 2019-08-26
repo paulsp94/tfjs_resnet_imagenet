@@ -23,7 +23,7 @@ import ResNetPrediction from 'resnet_imagenet';
 const catURI = 'https://upload.wikimedia.org/wikipedia/commons/6/66/An_up-close_picture_of_a_curious_male_domestic_shorthair_tabby_cat.jpg';
 
 const run = async () => {
-    const predictor = await ResNetPrediction.create();
+    const predictor = await ResNetPredictor.create();
     const preditction = await predictor.classify();
     return prediciton;
 }
