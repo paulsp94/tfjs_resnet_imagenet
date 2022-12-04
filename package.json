@@ -13,8 +13,8 @@
   "author": "Paul Spende <paul.spende@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "@tensorflow/tfjs": "^1.2.8",
-    "@tensorflow/tfjs-node": "^1.2.8",
+    "@tensorflow/tfjs": "^4.1.0",
+    "@tensorflow/tfjs-node": "^4.1.0",
     "jimp": "^0.16.2",
     "@babel/runtime": "^7.5.5"
   },
